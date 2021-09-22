@@ -5,19 +5,20 @@
 
 /* Общие стили логотипа студии для хедера и футера */
 .logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
 
-  @include text-value(26px, 700, 1.19);
-  color: #000000;
+  @include text-value(24px, 700, 1.17);
+  color: var(--secondary-title-color);
 }
 
 /* Отступы для лого в хедере */
 .page-header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  animation: puls 3000ms infinite;
+  // animation: puls 3000ms infinite;
 }
 
 /* Выделение цветом части логотипа */
@@ -26,100 +27,104 @@
 }
 
 /* Общий флекс контейнер хедера */
-.page-header__container {
-  display: flex;
-}
+// .page-header__container {
+//   display: flex;
+// }
 
 /* Флекс на навигацию */
-.page-header__menu {
-  display: flex;
-}
+// .page-header__menu {
+//   display: flex;
+// }
 
 /* Флекс на список навигации */
-.nav {
-  display: flex;
-}
+// .nav {
+//   display: flex;
+// }
 
 /* Задание позиционирования относительно li для подчеркивания в хедере */
 .nav__item {
-  position: relative;
+  // position: relative;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+  display: none;
 }
 
 /* Ссылки навигации по страницам сайта */
 .nav__link {
-  transition: color var(--tr-duration) var(--tr-function);
+  // transition: color var(--tr-duration) var(--tr-function);
 
-  display: block;
-  padding: 32px 0;
+  // display: block;
+  // padding: 32px 0;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-title-color);
+  // font-weight: 500;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // color: var(--secondary-title-color);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--accent-color);
+  // }
+  display: none;
 }
 
 /* Подсвечивание текущей страницы */
-.nav__link--current {
-  color: var(--accent-color);
+// .nav__link--current {
+//   color: var(--accent-color);
 
-  &::after {
-    position: absolute;
-    bottom: -1px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
+//   &::after {
+//     position: absolute;
+//     bottom: -1px;
+//     content: '';
+//     display: block;
+//     width: 100%;
+//     height: 4px;
 
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-}
+//     background-color: var(--accent-color);
+//     border-radius: 2px;
+//   }
+// }
 
 /* Флекс списка контактов и горизонтальный отступ к контактам хедера */
-.main-contacts {
-  display: flex;
-  margin-left: auto;
-}
+// .main-contacts {
+//   display: flex;
+//   margin-left: auto;
+// }
 
 /* Горизонтальный отступ между почтой и телефоном */
-.main-contacts__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// .main-contacts__item {
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
 /* Главная почта и телефон */
 .main-contacts__link {
-  display: flex;
-  padding: 32px 0;
-  align-items: center;
+  // display: flex;
+  // padding: 32px 0;
+  // align-items: center;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+  // font-weight: 500;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // color: var(--text-color);
 
-  transition: color var(--tr-duration) var(--tr-function);
+  // transition: color var(--tr-duration) var(--tr-function);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+  // &:hover,
+  // &:focus {
+  //   color: var(--accent-color);
+  // }
+  display: none;
 }
 
 /* Стили к иконкам телефона и почты */
 .main-contacts__icon {
-  display: block;
-  margin-right: 10px;
+  // display: block;
+  // margin-right: 10px;
 
-  fill: currentColor;
+  // fill: currentColor;
+  display: none;
 }

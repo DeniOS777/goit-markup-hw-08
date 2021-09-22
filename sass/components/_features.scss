@@ -1,13 +1,16 @@
 /* Флекс на список преимуществ */
-.features {
-  display: flex;
-  margin-left: -30px;
-}
+// .features {
+//   display: flex;
+//   margin-left: -30px;
+// }
 
 /* Размер элементов в списке преимуществ */
 .features__item {
-  flex-basis: calc(100% / 4);
-  margin-left: 30px;
+  // flex-basis: calc(100% / 4);
+  // margin-left: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 /* Фон под иконки */
@@ -27,7 +30,8 @@
   margin-bottom: 10px;
 
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
 }
 

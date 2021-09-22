@@ -1,23 +1,23 @@
 /* Стили к секции герой */
 .hero {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
 
   text-align: center;
 
-  background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: 1600px 600px;
-  background-position: center;
+  background-color: #696969;
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  // background-repeat: no-repeat;
+  // background-size: 480px 400px;
+  // background-position: center;
 }
 
 /* Стили к заголовку героя */
 .hero__title {
   margin-bottom: 30px;
-  min-height: 120px;
+  // min-height: 120px;
 
-  @include text-value(44px, 900, 1.36);
+  @include text-value(26px, 900, 1.62);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
