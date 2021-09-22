@@ -1,0 +1,57 @@
+/* Стили модального окна */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transition: transform var(--tr-duration) var(--tr-function), opacity var(--tr-duration) var(--tr-function),
+    visibility var(--tr-duration) var(--tr-function);
+  padding: 40px;
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -150%) scale(0) rotate(0deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/* Кнопка для закрытия модального окна */
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+  color: #000000;
+
+  background-color: unset;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: color var(--tr-duration) var(--tr-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+
+/* Наследование кнопкой цвета */
+.modal__icon {
+  fill: currentColor;
+}

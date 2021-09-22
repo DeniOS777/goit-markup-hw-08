@@ -1,0 +1,53 @@
+/* Сброс верхнего паддинга в секции о нашей работе */
+.section--reset-indent {
+  padding-top: 0;
+}
+
+/* Стили к заголовкам секций о нашей работе, команде, клиентах */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Отступ заголовка секций о нашей работе, команде, клиентах */
+.section__section-title {
+  margin-bottom: 50px;
+}
+
+/* Флекс на список о нашей работе */
+.work {
+  display: flex;
+  margin-left: -30px;
+}
+
+/* Стили к списку о нашей работе */
+.work__item {
+  flex-basis: calc(100% / 3);
+  margin-left: 30px;
+}
+
+/* Задание относительного позиционирования */
+.work__thumb {
+  position: relative;
+}
+
+/* Оверлей поверх изображений */
+.work__title {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

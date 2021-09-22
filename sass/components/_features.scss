@@ -1,0 +1,38 @@
+/* Флекс на список преимуществ */
+.features {
+  display: flex;
+  margin-left: -30px;
+}
+
+/* Размер элементов в списке преимуществ */
+.features__item {
+  flex-basis: calc(100% / 4);
+  margin-left: 30px;
+}
+
+/* Фон под иконки */
+.features__wrapper {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+/* Подзаголовки списка преимуществ */
+.features__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+/* Текс в подзаголовках преимуществ */
+.features__text {
+  line-height: 1.71;
+  color: var(--text-color);
+}
