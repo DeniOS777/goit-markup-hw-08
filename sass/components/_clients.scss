@@ -1,11 +1,14 @@
 /* Флекс списка клиентов */
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 /* Блоки в списке клиентов */
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
   height: 92px;
 
   border: 1px solid #afb1b8;
@@ -18,9 +21,9 @@
     border-color: var(--accent-color);
   }
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 /* Флекс на ссылки клиентов */

@@ -19,12 +19,13 @@
 /* Сброс курсивного начертания в теге address */
 .footer-info {
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 /* Отступы (margin) в списке футера кроме последнего */
 .footer-contacts__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 
@@ -61,7 +62,7 @@
   margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -69,6 +70,7 @@
 /* Флекс на список соц сетей */
 .footer-social-networks {
   display: inline-flex;
+  margin-bottom: 60px;
 }
 
 /* Стили к элементу списка */
@@ -108,12 +110,15 @@
 }
 
 /* Маржин меджу блоками */
-.wrapper--right-pos {
-  margin-left: 70px;
-}
+
+// .wrapper--right-pos {
+//   margin-left: 70px;
+// }
 
 /* Выравнивание по базовой линии */
+
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
 }

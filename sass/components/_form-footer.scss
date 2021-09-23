@@ -1,9 +1,10 @@
 /* Флекс на форму для компоновки */
-.footer-form {
-  display: flex;
-  align-items: flex-end;
-  margin-left: auto;
-}
+
+// .footer-form {
+//   display: flex;
+//   align-items: flex-end;
+//   margin-left: auto;
+// }
 
 /* Флекс на div для компоновки в колонку */
 .footer-form__field {
@@ -16,16 +17,17 @@
   margin-bottom: 20px;
 
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 /* Стили к полю ввода */
 .footer-form__input {
-  width: 358px;
-  min-height: 50px;
+  max-width: 450px;
+  height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
 
   font-size: 16px;
   color: #ffffff;
@@ -47,7 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin: 0 auto;
+  // margin-left: 12px;
   padding: 10px 0;
   min-width: 200px;
   min-height: 50px;
