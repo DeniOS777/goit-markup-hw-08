@@ -43,31 +43,31 @@
 
 /* Задание позиционирования относительно li для подчеркивания в хедере */
 .nav__item {
-  // position: relative;
+  position: relative;
 
-  // &:not(:last-child) {
-  //   margin-right: 50px;
-  // }
-  display: none;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  // display: none;
 }
 
 /* Ссылки навигации по страницам сайта */
 .nav__link {
-  // transition: color var(--tr-duration) var(--tr-function);
+  transition: color var(--tr-duration) var(--tr-function);
 
-  // display: block;
-  // padding: 32px 0;
+  display: block;
+  padding: 32px 0;
 
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  // color: var(--secondary-title-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
 
-  // &:hover,
-  // &:focus {
-  //   color: var(--accent-color);
-  // }
-  display: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  // display: none;
 }
 
 /* Подсвечивание текущей страницы */
