@@ -19,7 +19,10 @@
 /* Сброс курсивного начертания в теге address */
 .footer-info {
   font-style: normal;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 /* Отступы (margin) в списке футера кроме последнего */
@@ -70,7 +73,9 @@
 /* Флекс на список соц сетей */
 .footer-social-networks {
   display: inline-flex;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 /* Стили к элементу списка */
@@ -111,14 +116,30 @@
 
 /* Маржин меджу блоками */
 
-// .wrapper--right-pos {
-//   margin-left: 70px;
-// }
+.wrapper--left-pos {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 65px;
+    text-align: center;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.wrapper--right-pos {
+  // margin-left: 70px;
+  // text-align: center;
+}
 
 /* Выравнивание по базовой линии */
-
 .footer__container {
-  // display: flex;
-  // align-items: baseline;
-  text-align: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }

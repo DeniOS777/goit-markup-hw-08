@@ -11,16 +11,6 @@
   margin: 15px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  transition: border-color var(--tr-duration) var(--tr-function);
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-  }
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 3);
   }
@@ -38,13 +28,17 @@
   justify-content: center;
   align-items: center;
 
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
   color: #afb1b8;
 
-  transition: color var(--tr-duration) var(--tr-function);
+  transition: color var(--tr-duration) var(--tr-function), border-color var(--tr-duration) var(--tr-function);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 
