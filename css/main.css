@@ -981,6 +981,13 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
 /* Кнопка для закрытия модального окна */
 .modal__btn {
   position: absolute;
@@ -1037,6 +1044,14 @@ body {
   line-height: 1.15;
   text-align: center;
   color: var(--secondary-title-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal__text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
 }
 
 /* Стили к лэйблам */
@@ -1098,7 +1113,7 @@ body {
 }
 
 .modal-form__text::placeholder {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -1142,6 +1157,13 @@ body {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-policy__label {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 /* Стили к созданию кастомного чекбокса через свг */
 .modal-policy__wrapper {
   display: flex;
@@ -1159,7 +1181,7 @@ body {
 .modal-form__link {
   color: var(--accent-color);
   text-decoration-line: underline;
-  margin-left: 4px;
+  margin-left: 3px;
 }
 
 /* Стили к кнопке закрытия модального окна */
