@@ -20,6 +20,10 @@
     visibility: hidden;
     opacity: 0;
   }
+  @media screen and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 /* Кнопка для закрытия модального окна */
