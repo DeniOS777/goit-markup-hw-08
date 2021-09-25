@@ -786,9 +786,27 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+  }
+}
+
 /* Отступ списка кнопок */
 .section__filter {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__filter {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__filter {
+    margin-bottom: 50px;
+  }
 }
 
 /* Отступы между кнопками фильтра */
@@ -823,9 +841,27 @@ body {
 }
 
 /* Флекс на список проектов */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 /* Стили к списку проектов */
 .projects__item {
-  margin-bottom: 30px;
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 /* Задание ссылке типа block и анимация */
@@ -863,6 +899,18 @@ body {
 .projects__link:hover .projects__text,
 .projects__link:focus .projects__text {
   transform: translate(0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .projects__text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__text {
+    padding: 63px 24px;
+  }
 }
 
 /* Отступы под карточкой проекта */
