@@ -73,6 +73,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Скрытие заголовков */
 .visually-hidden {
   position: absolute;
@@ -246,9 +253,27 @@ body {
 }
 
 /* Флекс на список преимуществ */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 /* Размер элементов в списке преимуществ */
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
+.features__item {
+  margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 /* Фон под иконки */
@@ -267,8 +292,13 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
 }
 
 /* Текс в подзаголовках преимуществ */
@@ -289,9 +319,22 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 /* Отступ заголовка секций о нашей работе, команде, клиентах */
 .section__section-title {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__section-title {
+    margin-bottom: 50px;
+  }
 }
 
 /* Флекс на список о нашей работе */
@@ -304,15 +347,30 @@ body {
 }
 
 /* Флекс на список команды */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 /* Стили к списку команды */
 .team__item {
+  margin: 15px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 /* Стили к подписи фото членов команды */
@@ -395,6 +453,18 @@ body {
 
 .clients__item:hover, .clients__item:focus {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 
 /* Флекс на ссылки клиентов */
