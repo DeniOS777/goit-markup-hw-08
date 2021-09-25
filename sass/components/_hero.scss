@@ -1,7 +1,10 @@
 /* Стили к секции герой */
 .hero {
+  max-width: 1600px;
   padding-bottom: 118px;
   padding-top: 118px;
+  margin-left: auto;
+  margin-right: auto;
 
   text-align: center;
 
@@ -40,17 +43,24 @@
         url(../images/hero-bg/hero-bg_desc_2x.jpg);
     }
   }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 /* Стили к заголовку героя */
 .hero__title {
   margin-bottom: 30px;
-  // min-height: 120px;
 
   @include text-value(26px, 900, 1.62);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+
+  @media screen and (min-width: 1200px) {
+    @include text-value(44px, 900, 1.36);
+  }
 }
 
 /* Кнопка заказа услуги */
