@@ -1,17 +1,20 @@
 /* Флекс на список проектов */
 
-// .projects {
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-left: -30px;
-//   margin-top: -30px;
-// }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
 
 /* Стили к списку проектов */
 .projects__item {
-  // flex-basis: calc((100% - 90px) / 3);
-  // margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 /* Задание ссылке типа block и анимация */
@@ -52,6 +55,12 @@
   .projects__link:hover &,
   .projects__link:focus & {
     transform: translate(0, 0);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
 

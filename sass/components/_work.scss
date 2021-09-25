@@ -1,6 +1,7 @@
 /* Сброс верхнего паддинга в секции о нашей работе */
 .section--reset-indent {
   display: none;
+
   @media screen and (min-width: 1200px) {
     padding-top: 0;
     display: unset;

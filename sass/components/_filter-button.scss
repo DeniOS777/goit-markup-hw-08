@@ -2,13 +2,20 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-
-  // justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 /* Отступ списка кнопок */
 .section__filter {
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 /* Отступы между кнопками фильтра */
