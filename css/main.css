@@ -44,7 +44,6 @@ body {
 
 /* Контейнер для центрирования контента */
 .container {
-  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -155,8 +154,11 @@ body {
 
 /* Стили к секции герой */
 .hero {
+  max-width: 1600px;
   padding-bottom: 118px;
   padding-top: 118px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #696969;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg/hero-bg_mob_1x.jpg);
@@ -195,6 +197,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+}
+
 /* Стили к заголовку героя */
 .hero__title {
   margin-bottom: 30px;
@@ -204,6 +213,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+  }
 }
 
 /* Кнопка заказа услуги */
@@ -588,7 +605,7 @@ body {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .filter__item:nth-child(-n + 3) {
     margin-bottom: 15px;
   }
@@ -645,7 +662,7 @@ body {
   transition: transform var(--tr-duration) var(--tr-function);
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
