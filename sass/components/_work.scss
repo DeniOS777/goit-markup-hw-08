@@ -9,11 +9,20 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 /* Отступ заголовка секций о нашей работе, команде, клиентах */
 .section__section-title {
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 /* Флекс на список о нашей работе */

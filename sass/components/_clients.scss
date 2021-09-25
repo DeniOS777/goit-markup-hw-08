@@ -21,9 +21,13 @@
     border-color: var(--accent-color);
   }
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 
 /* Флекс на ссылки клиентов */

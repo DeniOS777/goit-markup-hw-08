@@ -1,16 +1,23 @@
 /* Флекс на список преимуществ */
-// .features {
-//   display: flex;
-//   margin-left: -30px;
-// }
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
 
 /* Размер элементов в списке преимуществ */
 .features__item {
-  // flex-basis: calc(100% / 4);
-  // margin-left: 30px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
 }
 
 /* Фон под иконки */
@@ -31,8 +38,11 @@
 
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 /* Текс в подзаголовках преимуществ */
