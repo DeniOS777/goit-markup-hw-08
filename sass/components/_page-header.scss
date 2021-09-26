@@ -174,7 +174,7 @@
   display: flex;
   align-self: center;
   border-style: none;
-  background-color: unset;
+  background-color: transparent;
   padding: 12px 8px;
   &:hover,
   &:focus {
@@ -193,7 +193,7 @@
   padding: 48px 0px 48px 40px;
   background-color: #ffffff;
   transform: translateX(100%);
-  transition: transform 1s linear;
+  transition: transform 350ms ease-in-out;
   &.is-open {
     transform: translateX(0);
   }
@@ -257,6 +257,7 @@
     }
   }
 }
+
 .networks__item {
   &:not(:last-child) {
     margin-right: 10px;
