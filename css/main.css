@@ -140,6 +140,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  display: none;
 }
 
 .nav__link:hover, .nav__link:focus {
@@ -963,29 +964,29 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 528px;
+  height: 581px;
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform var(--tr-duration) var(--tr-function), opacity var(--tr-duration) var(--tr-function), visibility var(--tr-duration) var(--tr-function);
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -150%) scale(0) rotate(0deg);
   visibility: hidden;
   opacity: 0;
-}
-
-@media screen and (max-width: 1199px) {
-  .modal {
-    min-width: 450px;
-    min-height: 609px;
-  }
 }
 
 /* Кнопка для закрытия модального окна */
