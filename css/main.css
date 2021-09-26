@@ -148,6 +148,10 @@ body {
   display: flex;
 }
 
+.mob-menu {
+  display: contents;
+}
+
 /* Флекс на навигацию */
 .page-header__menu {
   display: flex;
@@ -275,6 +279,18 @@ body {
   .main-contacts__icon {
     display: block;
   }
+}
+
+.open-mob-menu {
+  display: flex;
+  align-self: center;
+  border-style: none;
+  background-color: unset;
+  padding: 12px 8px;
+}
+
+.open-mob-menu:hover, .open-mob-menu:focus {
+  fill: var(--accent-color);
 }
 
 /* Стили к секции герой */
