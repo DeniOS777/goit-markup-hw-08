@@ -30,7 +30,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1108,7 +1108,9 @@ body {
 /* Задание ссылке типа block и анимация */
 .projects__link {
   transition: box-shadow var(--tr-duration) var(--tr-function);
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .projects__link:hover, .projects__link:focus {
@@ -1156,6 +1158,7 @@ body {
 
 /* Отступы под карточкой проекта */
 .projects__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
