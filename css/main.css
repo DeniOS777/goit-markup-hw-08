@@ -93,6 +93,18 @@ body {
 }
 
 /* Анимация */
+@keyframes puls {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* Нижняя рамка у хедера */
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -120,6 +132,7 @@ body {
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
+  animation: puls 3000ms infinite;
 }
 
 @media screen and (min-width: 768px) {
