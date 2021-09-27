@@ -69,7 +69,7 @@
         </button>
       </div>
       <!-- Мобильное меню -->
-      <div class="mob-menu is-open">
+      <div class="mob-menu js-menu-container">
         <button class="close-mob-menu js-close-menu" type="button">
           <svg class="close-mob-menu__icon" width="18" height="18" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/icons.svg#icon-burger-close"></use>
@@ -80,7 +80,7 @@
             <a class="menu__link" href="./index.html">Студия</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Портфолио</a>
+            <a class="menu__link menu__link--current" href="#">Портфолио</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="">Контакты</a>
@@ -379,5 +379,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
