@@ -47,7 +47,10 @@
 
 /* Флекс на навигацию */
 .page-header__menu {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 /* Флекс на список навигации */
