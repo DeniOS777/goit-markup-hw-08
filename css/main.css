@@ -1119,20 +1119,25 @@ body {
 }
 
 /* Флекс на список проектов */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 /* Стили к списку проектов */
-.projects__item {
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .projects__item {
     flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
