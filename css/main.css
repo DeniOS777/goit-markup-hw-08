@@ -847,6 +847,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
+}
+
 /* Флекс на список соц сетей */
 .footer-social-networks {
   display: inline-flex;
