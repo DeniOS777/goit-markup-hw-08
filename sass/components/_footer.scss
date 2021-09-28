@@ -68,6 +68,9 @@
   line-height: 1.14;
   color: #ffffff;
   text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 /* Флекс на список соц сетей */
