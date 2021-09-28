@@ -43,7 +43,6 @@
 /* Общий флекс контейнер хедера */
 .page-header__container {
   display: flex;
-  align-items: center;
 }
 
 /* Флекс на навигацию */
@@ -110,7 +109,7 @@
   margin-left: auto;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 21px 0;
+    padding: 20px 0;
   }
 
   @media screen and (min-width: 1200px) {
