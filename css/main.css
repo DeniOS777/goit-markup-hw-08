@@ -163,7 +163,13 @@ body {
 
 /* Флекс на навигацию */
 .page-header__menu {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    display: flex;
+  }
 }
 
 /* Флекс на список навигации */
@@ -506,20 +512,25 @@ body {
 }
 
 /* Флекс на список преимуществ */
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 /* Размер элементов в списке преимуществ */
-.features__item {
-  margin: 15px;
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .features__item {
     flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
