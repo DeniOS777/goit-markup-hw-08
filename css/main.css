@@ -822,12 +822,6 @@ body {
   font-style: normal;
 }
 
-@media screen and (max-width: 1199px) {
-  .footer-info {
-    margin-bottom: 60px;
-  }
-}
-
 /* Отступы (margin) в списке футера кроме последнего */
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 8px;
@@ -876,12 +870,6 @@ body {
   display: inline-flex;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-social-networks {
-    margin-bottom: 60px;
-  }
-}
-
 /* Стили к элементу списка */
 .footer-social-networks__item {
   width: 44px;
@@ -923,9 +911,21 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .wrapper--left-pos {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .wrapper--left-pos {
     margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper--right-pos {
+    margin-bottom: 60px;
   }
 }
 
