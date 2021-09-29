@@ -249,26 +249,24 @@
 
 .contacts {
   margin-top: auto;
-}
-
-.contacts__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 64px;
+    }
   }
-  &:nth-child(2) {
-    margin-bottom: 64px;
-  }
-}
-
-.contacts__link {
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-  &--style {
-    font-size: 24px;
-    line-height: 1.17;
-    color: var(--text-color);
+  &__link {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    &--style {
+      font-size: 24px;
+      line-height: 1.17;
+      color: var(--text-color);
+    }
   }
 }
 
@@ -287,10 +285,9 @@
       color: var(--text-color);
     }
   }
-}
-
-.networks__item {
-  &:not(:last-child) {
-    margin-right: 10px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
