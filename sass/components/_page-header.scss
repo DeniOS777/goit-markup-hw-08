@@ -184,6 +184,7 @@
   border-style: none;
   background-color: transparent;
   padding: 12px 8px;
+
   transition: fill var(--tr-duration) var(--tr-function);
   &:hover,
   &:focus {
@@ -220,6 +221,7 @@
   border-style: none;
   margin-bottom: 5px;
   background-color: transparent;
+
   transition: fill var(--tr-duration) var(--tr-function);
   &:hover,
   &:focus {
@@ -238,6 +240,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  transition: color var(--tr-duration) var(--tr-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
