@@ -159,6 +159,7 @@ body {
 /* Общий флекс контейнер хедера */
 .page-header__container {
   display: flex;
+  justify-content: space-between;
 }
 
 /* Флекс на навигацию */
@@ -225,8 +226,10 @@ body {
 }
 
 /* Флекс списка контактов и горизонтальный отступ к контактам хедера */
-.main-contacts {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .main-contacts {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
