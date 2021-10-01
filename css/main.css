@@ -226,9 +226,14 @@ body {
 }
 
 /* Флекс списка контактов и горизонтальный отступ к контактам хедера */
+.main-contacts {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .main-contacts {
     margin-left: auto;
+    display: unset;
   }
 }
 
@@ -902,13 +907,12 @@ body {
 /* Маржин меджу блоками */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper--left-pos {
-    padding-left: 65px;
+    padding-left: 61px;
     text-align: center;
-    margin-right: 165px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .wrapper--left-pos {
     margin-bottom: 60px;
   }
@@ -926,9 +930,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper--right-pos {
+    padding-right: 74px;
+  }
+}
+
 /* Выравнивание по базовой линии */
 .footer__container {
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 @media screen and (max-width: 767px) {
@@ -941,6 +952,24 @@ body {
   .footer__container {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.main-wrapper {
+  align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-between;
   }
 }
 
