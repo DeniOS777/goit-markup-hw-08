@@ -114,11 +114,10 @@
 
 .wrapper--left-pos {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-left: 65px;
+    padding-left: 61px;
     text-align: center;
-    margin-right: 165px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
@@ -130,16 +129,32 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 74px;
+  }
 }
 
 /* Выравнивание по базовой линии */
 .footer__container {
   flex-wrap: wrap;
+  align-items: baseline;
   @media screen and (max-width: 767px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.main-wrapper {
+  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-between;
   }
 }

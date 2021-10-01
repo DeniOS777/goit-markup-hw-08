@@ -110,8 +110,10 @@
 
 /* Флекс списка контактов и горизонтальный отступ к контактам хедера */
 .main-contacts {
+  display: none;
   @media screen and (min-width: 768px) {
     margin-left: auto;
+    display: unset;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
