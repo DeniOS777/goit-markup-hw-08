@@ -160,6 +160,7 @@ body {
 .page-header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Флекс на навигацию */
@@ -239,7 +240,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-contacts {
-    padding: 20px 0;
+    padding: 19px 0;
   }
 }
 
@@ -1463,6 +1464,7 @@ body {
 /* Стили к лэйбл в соглашении */
 .modal-policy__label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
