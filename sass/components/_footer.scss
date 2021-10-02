@@ -72,15 +72,14 @@
 /* Флекс на список соц сетей */
 .footer-social-networks {
   display: inline-flex;
-}
 
-/* Стили к элементу списка */
-.footer-social-networks__item {
-  width: 44px;
-  height: 44px;
+  &__item {
+    width: 44px;
+    height: 44px;
 
-  &:not(:last-child) {
-    margin-right: 10px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -114,7 +113,6 @@
 
 .wrapper--left-pos {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-left: 61px;
     text-align: center;
   }
   @media screen and (max-width: 767px) {
@@ -128,9 +126,6 @@
 .wrapper--right-pos {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-right: 74px;
   }
 }
 
@@ -156,5 +151,7 @@
     width: 100%;
     margin-bottom: 60px;
     justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 74px;
   }
 }
