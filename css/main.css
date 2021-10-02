@@ -873,7 +873,6 @@ body {
   display: inline-flex;
 }
 
-/* Стили к элементу списка */
 .footer-social-networks__item {
   width: 44px;
   height: 44px;
@@ -908,7 +907,6 @@ body {
 /* Маржин меджу блоками */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .wrapper--left-pos {
-    padding-left: 61px;
     text-align: center;
   }
 }
@@ -928,12 +926,6 @@ body {
 @media screen and (max-width: 767px) {
   .wrapper--right-pos {
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .wrapper--right-pos {
-    padding-right: 74px;
   }
 }
 
@@ -971,6 +963,8 @@ body {
     width: 100%;
     margin-bottom: 60px;
     justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 74px;
   }
 }
 
