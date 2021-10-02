@@ -44,6 +44,7 @@
 .page-header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Флекс на навигацию */
@@ -117,7 +118,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding: 20px 0;
+    padding: 19px 0;
   }
 
   @media screen and (min-width: 1200px) {
