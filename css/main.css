@@ -95,13 +95,13 @@ body {
 /* Анимация */
 @keyframes puls {
   0% {
-    transform: scale(1);
+    transform: rotateY(0deg) scale(1) translateX(-200px);
   }
   50% {
-    transform: scale(1.5);
+    transform: rotateY(45deg) scale(1.6) translateZ(50px);
   }
   100% {
-    transform: scale(1);
+    transform: rotateY(360deg) scale(1) translateZ(30px);
   }
 }
 
@@ -132,7 +132,7 @@ body {
 .page-header__logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  animation: puls 3000ms infinite;
+  animation: puls 3000ms;
 }
 
 @media screen and (min-width: 768px) {
